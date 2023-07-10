@@ -60,10 +60,9 @@ Code is under reorganizing...
 [2023/07/09 22:28:26] - 32.00 	 layer4.1.bn2 	 152 	 0.30000000000000004 	 4.2908 	 0.0172 	 0.2295 	 0.9277
 ```
 
-```
-
 ## Citation
 If you use this code in your work, please cite the accompanying paper:
+
 ```
 @inproceedings{
 li2023reconstructive,
@@ -86,3 +85,5 @@ As this code is reproduced based on the open-sourced code [ANP](https://github.c
   - ABL: https://github.com/bboylyg/ABL
   - Frequency: https://github.com/YiZeng623/frequency-backdoor
   - NC: https://github.com/VinAIResearch/input-aware-backdoor-attack-release/tree/master/defenses/neural_cleanse
+  - BackdoorBox: https://github.com/THUYimingLi/BackdoorBox
+  - BackdoorBench:https://github.com/SCLBD/BackdoorBench
