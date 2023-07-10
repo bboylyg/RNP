@@ -7,8 +7,7 @@ Code is under reorganizing...
 # Experimental Results on BadNets Attack  
 
 ``
-[2023/07/09 22:21:00] - Namespace(alpha=0.2, arch='resnet18', backdoor_model_path='weights/ResNet18-ResNet-BadNets-target0-portion0.1-epoch80.tar', batch_size=128, clean_threshold=0.2, cuda=1, dataset='CIFAR10', log_root='logs/', mask_file=None, momentum=0.9, num_class=10, output_weight='weights/', pruning_by='threshold', pruning_max=0.9, pruning_step=0.05, ratio=0.01, recovering_epochs=20, recovering_lr=0.2, save_every=5, schedule=[10, 20], target_label=0, target_type='all2one', trig_h=3, trig_w=3, trigger_type='gridTrigger', unlearned_model_path=None, unlearning_epochs=20, unlearning_lr=0.01, weight_decay=0.0005)
-{'cuda': 1, 'save_every': 5, 'log_root': 'logs/', 'output_weight': 'weights/', 'backdoor_model_path': 'weights/ResNet18-ResNet-BadNets-target0-portion0.1-epoch80.tar', 'unlearned_model_path': None, 'arch': 'resnet18', 'schedule': [10, 20], 'dataset': 'CIFAR10', 'batch_size': 128, 'momentum': 0.9, 'weight_decay': 0.0005, 'num_class': 10, 'ratio': 0.01, 'target_label': 0, 'trigger_type': 'gridTrigger', 'target_type': 'all2one', 'trig_w': 3, 'trig_h': 3, 'alpha': 0.2, 'clean_threshold': 0.2, 'unlearning_lr': 0.01, 'recovering_lr': 0.2, 'unlearning_epochs': 20, 'recovering_epochs': 20, 'mask_file': None, 'pruning_by': 'threshold', 'pruning_max': 0.9, 'pruning_step': 0.05}
+
 [2023/07/09 22:21:00] - ----------- Data Initialization --------------
 ==> Preparing train data..
 Files already downloaded and verified
@@ -22,6 +21,8 @@ Injecting Over: 0Bad Imgs, 10000Clean Imgs
   0%|          | 0/10000 [00:00<?, ?it/s]Generating testbad Imgs
  91%|█████████▏| 9144/10000 [00:00<00:00, 14232.94it/s]Injecting Over: 9000Bad Imgs, 1000Clean Imgs
 100%|██████████| 10000/10000 [00:00<00:00, 14938.13it/s]
+
+
 [2023/07/09 22:21:03] - ----------- Backdoor Model Initialization --------------
 [2023/07/09 22:21:04] - Epoch 	 lr 	 Time 	 TrainLoss 	 TrainACC 	 PoisonLoss 	 PoisonACC 	 CleanLoss 	 CleanACC
 [2023/07/09 22:21:04] - ----------- Model Unlearning --------------
@@ -40,6 +41,7 @@ Injecting Over: 0Bad Imgs, 10000Clean Imgs
 [2023/07/09 22:23:25] - 12 	 0.001 	 10.8 	 4.8811 	 0.1980 	 0.0000 	 1.0000 	 3.2337 	 0.3368
 [2023/07/09 22:23:25] - ----------- Model Recovering --------------
 Unlearned Model: 12 0.3367777777777778 1.0
+
 [2023/07/09 22:23:26] - Epoch 	 lr 	 Time 	 TrainLoss 	 TrainACC 	 PoisonLoss 	 PoisonACC 	 CleanLoss 	 CleanACC
 [2023/07/09 22:23:37] - 1 	 0.200 	 11.0 	 1.0719 	 0.1980 	 0.0000 	 1.0000 	 2.0311 	 0.4370
 [2023/07/09 22:23:48] - 2 	 0.200 	 11.0 	 0.9892 	 0.1920 	 0.0000 	 1.0000 	 1.3383 	 0.5432
@@ -61,6 +63,8 @@ Unlearned Model: 12 0.3367777777777778 1.0
 [2023/07/09 22:26:44] - 18 	 0.200 	 11.0 	 0.1476 	 0.6120 	 0.5614 	 0.7083 	 0.5766 	 0.8244
 [2023/07/09 22:26:55] - 19 	 0.200 	 11.0 	 0.1510 	 0.6380 	 0.5674 	 0.7069 	 0.5601 	 0.8312
 [2023/07/09 22:27:06] - 20 	 0.200 	 11.1 	 0.1439 	 0.6520 	 0.5788 	 0.6988 	 0.5417 	 0.8402
+
+
 [2023/07/09 22:27:07] - ----------- Backdoored Model Pruning --------------
 [2023/07/09 22:27:07] - No. 	 Layer Name 	 Neuron Idx 	 Mask 	 PoisonLoss 	 PoisonACC 	 CleanLoss 	 CleanACC
 [2023/07/09 22:27:17] - 0 	 None     	 None     	 0.0001 	 1.0000 	 0.2157 	 0.9340
