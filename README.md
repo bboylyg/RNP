@@ -1,6 +1,8 @@
 # Reconstructive Neuron Pruning for Backdoor Defense
 
 Code for ICML 2023 Paper ["Reconstructive Neuron Pruning for Backdoor Defense"](https://arxiv.org/pdf/2305.14876.pdf)
+---
+
 
 # Quick Start: RNP against BadNets Attack  
 By default, we only use 500 defense data randomly sampled from the training set to perform the `unlearn-recover` process and optimize the pruning mask. To check the performance of RNP on a Badnets ResNet-18 network (i.e. 10% poisoning rata with ResNet-18 on CIFAR-10), you can directly run the command like:
