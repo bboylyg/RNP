@@ -2,8 +2,12 @@
 
 Code for ICML 2023 Paper ["Reconstructive Neuron Pruning for Backdoor Defense"](https://arxiv.org/pdf/2305.14876.pdf)
 
-# Note
-Code is under reorganizing...
+# Quick Start: RNP against BadNets Attack  
+By default, we only use 500 defense data randomly sampled from the training set to perform the `unlearn-recover` process and optimize the pruning mask. To check the performance of RNP on a Badnets ResNet-18 network (i.e. 10% poisoning rata with ResNet-18 on CIFAR-10), you can directly run the command like:
+
+```python
+python main.py
+```
 
 # Experimental Results on BadNets Attack  
 
@@ -59,6 +63,25 @@ Code is under reorganizing...
 [2023/07/09 22:28:16] - 28.00 	 layer3.0.bn1 	 106 	 0.25 	 3.2791 	 0.0424 	 0.2292 	 0.9270
 [2023/07/09 22:28:26] - 32.00 	 layer4.1.bn2 	 152 	 0.30000000000000004 	 4.2908 	 0.0172 	 0.2295 	 0.9277
 ```
+
+## Backdoor Model Weights
+You can directly download the pre-trained backdoored model weights with the links below:  
+
+| Attacks | Paper Name | Baidu Weight Source (pwd: 1212) | Google Weight Source  |
+|:---:|:---:|:---:|:---:|
+| Badnets | Badnets: Evaluating Backdooring Attacks on Deep Neural Networks | [Baidu Drive](https://pan.baidu.com/s/1LXZuvb06als1D025eK04_Q) | [Google Drive]() |
+| Trojan | Trojaning attack on Neural Networks | [Baidu Drive](https://pan.baidu.com/s/1LXZuvb06als1D025eK04_Q) | [Google Drive]() |
+| Blend | Targeted Backdoor Attacks on Deep Learning Systems Using Data Poisoning | [Baidu Drive](https://pan.baidu.com/s/1LXZuvb06als1D025eK04_Q) | [Google Drive]() |
+| CL | Label-Consistent Backdoor Attacks | [Baidu Drive](https://pan.baidu.com/s/1LXZuvb06als1D025eK04_Q) | [Google Drive]() |
+| SIG | A New Backdoor Attack in Cnns by Training Set Corruption without Label Poisoning | [Baidu Drive](https://pan.baidu.com/s/1LXZuvb06als1D025eK04_Q) | [Google Drive]() |
+| Dynamic | Input-Aware Dynamic Backdoor Attack | [Baidu Drive](https://pan.baidu.com/s/1LXZuvb06als1D025eK04_Q) | [Google Drive]() |
+| WaNet | WaNet - Imperceptible Warping-based Backdoor Attack | [Baidu Drive](https://pan.baidu.com/s/1LXZuvb06als1D025eK04_Q) | [Google Drive]() |
+| FC | Poison Frog! Targeted Clean-label Backdoor Attacks on Neural Networks | [Baidu Drive](https://pan.baidu.com/s/1LXZuvb06als1D025eK04_Q) | [Google Drive]() |
+| DFST | Deep Feature Space Trojan Attack of Neural Networks by Controlled Detoxifcation | [Baidu Drive](https://pan.baidu.com/s/1LXZuvb06als1D025eK04_Q) | [Google Drive]() |
+| AWP | Can Adversarial Weight Perturbations Inject Neural Backdoors | [Baidu Drive](https://pan.baidu.com/s/1LXZuvb06als1D025eK04_Q) | [Google Drive]() |
+| LIRA | LIRA: Learnable, Imperceptible and Robust Backdoor Attacks | [Baidu Drive](https://pan.baidu.com/s/1LXZuvb06als1D025eK04_Q) | [Google Drive]() |
+| A-Blend | Circumventing Backdoor Defense that are Based on Latent Separability  | [Baidu Drive](https://pan.baidu.com/s/1LXZuvb06als1D025eK04_Q) | [Google Drive]() |
+
 
 ## Citation
 If you use this code in your work, please cite the accompanying paper:
