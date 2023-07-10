@@ -78,7 +78,7 @@ As this code is reproduced based on the open-sourced code [ANP](https://github.c
 
 
 
-## Part of the code is based on the following repo:
+## Backdoor-related repo:
   - Dynamic Attack: https://github.com/VinAIResearch/input-aware-backdoor-attack-release
   - STRIP: https://github.com/garrisongys/STRIP
   - NAD: https://github.com/bboylyg/NAD
