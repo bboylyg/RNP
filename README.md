@@ -1,5 +1,6 @@
-# RNP
-Reconstructive Neuron Pruning for Backdoor Defense (ICML 2023)
+# Reconstructive Neuron Pruning for Backdoor Defense
+
+Code for ICML 2023 Paper ["Reconstructive Neuron Pruning for Backdoor Defense"](https://arxiv.org/pdf/2305.14876.pdf)
 
 # Note
 Code is under reorganizing...
@@ -58,3 +59,30 @@ Code is under reorganizing...
 [2023/07/09 22:28:16] - 28.00 	 layer3.0.bn1 	 106 	 0.25 	 3.2791 	 0.0424 	 0.2292 	 0.9270
 [2023/07/09 22:28:26] - 32.00 	 layer4.1.bn2 	 152 	 0.30000000000000004 	 4.2908 	 0.0172 	 0.2295 	 0.9277
 ```
+
+```
+
+## Citation
+If you use this code in your work, please cite the accompanying paper:
+```
+@inproceedings{
+li2023reconstructive,
+title={Reconstructive Neuron Pruning for Backdoor Defense},
+author={Yige Li and Xixiang Lyu and Xingjun Ma and Nodens Koren and Lingjuan Lyu and Bo Li and Yu-Gang Jiang},
+booktitle={ICML},
+year={2023},
+}
+```
+
+## Acknowledgements
+As this code is reproduced based on the open-sourced code [ANP](https://github.com/csdongxian/ANP_backdoor) and [DCB](https://github.com/HanxunH/CognitiveDistillation), the authors would like to thank their contribution and help. 
+
+
+
+## Part of the code is based on the following repo:
+  - Dynamic Attack: https://github.com/VinAIResearch/input-aware-backdoor-attack-release
+  - STRIP: https://github.com/garrisongys/STRIP
+  - NAD: https://github.com/bboylyg/NAD
+  - ABL: https://github.com/bboylyg/ABL
+  - Frequency: https://github.com/YiZeng623/frequency-backdoor
+  - NC: https://github.com/VinAIResearch/input-aware-backdoor-attack-release/tree/master/defenses/neural_cleanse
