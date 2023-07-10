@@ -73,18 +73,18 @@ You can directly download the pre-trained backdoored model weights with the link
 
 | Attacks | Paper Name | Baidu Weight Source (pwd: 1212) | Google Weight Source  |
 |:---:|:---:|:---:|:---:|
-| Badnets | Badnets: Evaluating Backdooring Attacks on Deep Neural Networks | [Baidu Drive](https://pan.baidu.com/s/1LXZuvb06als1D025eK04_Q) | [Google Drive]() |
-| Trojan | Trojaning attack on Neural Networks | [Baidu Drive](https://pan.baidu.com/s/1LXZuvb06als1D025eK04_Q) | [Google Drive]() |
-| Blend | Targeted Backdoor Attacks on Deep Learning Systems Using Data Poisoning | [Baidu Drive](https://pan.baidu.com/s/1LXZuvb06als1D025eK04_Q) | [Google Drive]() |
-| CL | Label-Consistent Backdoor Attacks | [Baidu Drive](https://pan.baidu.com/s/1LXZuvb06als1D025eK04_Q) | [Google Drive]() |
-| SIG | A New Backdoor Attack in Cnns by Training Set Corruption without Label Poisoning | [Baidu Drive](https://pan.baidu.com/s/1LXZuvb06als1D025eK04_Q) | [Google Drive]() |
-| Dynamic | Input-Aware Dynamic Backdoor Attack | [Baidu Drive](https://pan.baidu.com/s/1LXZuvb06als1D025eK04_Q) | [Google Drive]() |
-| WaNet | WaNet - Imperceptible Warping-based Backdoor Attack | [Baidu Drive](https://pan.baidu.com/s/1LXZuvb06als1D025eK04_Q) | [Google Drive]() |
-| FC | Poison Frog! Targeted Clean-label Backdoor Attacks on Neural Networks | [Baidu Drive](https://pan.baidu.com/s/1LXZuvb06als1D025eK04_Q) | [Google Drive]() |
-| DFST | Deep Feature Space Trojan Attack of Neural Networks by Controlled Detoxifcation | [Baidu Drive](https://pan.baidu.com/s/1LXZuvb06als1D025eK04_Q) | [Google Drive]() |
-| AWP | Can Adversarial Weight Perturbations Inject Neural Backdoors | [Baidu Drive](https://pan.baidu.com/s/1LXZuvb06als1D025eK04_Q) | [Google Drive]() |
-| LIRA | LIRA: Learnable, Imperceptible and Robust Backdoor Attacks | [Baidu Drive](https://pan.baidu.com/s/1LXZuvb06als1D025eK04_Q) | [Google Drive]() |
-| A-Blend | Circumventing Backdoor Defense that are Based on Latent Separability  | [Baidu Drive](https://pan.baidu.com/s/1LXZuvb06als1D025eK04_Q) | [Google Drive]() |
+| Badnets | Badnets: Evaluating Backdooring Attacks on Deep Neural Networks | [Baidu Drive](https://pan.baidu.com/s/1LXZuvb06als1D025eK04_Q) | [Google Drive](https://drive.google.com/file/d/1B4eHfsTyw_Qj-XgZc2byYDT_95TLjtLj/view?usp=sharing) |
+| Trojan | Trojaning attack on Neural Networks | [Baidu Drive](https://pan.baidu.com/s/1LXZuvb06als1D025eK04_Q) | [Google Drive](https://drive.google.com/file/d/1B4eHfsTyw_Qj-XgZc2byYDT_95TLjtLj/view?usp=sharing) |
+| Blend | Targeted Backdoor Attacks on Deep Learning Systems Using Data Poisoning | [Baidu Drive](https://pan.baidu.com/s/1LXZuvb06als1D025eK04_Q) | [Google Drive](https://drive.google.com/file/d/1B4eHfsTyw_Qj-XgZc2byYDT_95TLjtLj/view?usp=sharing) |
+| CL | Label-Consistent Backdoor Attacks | [Baidu Drive](https://pan.baidu.com/s/1LXZuvb06als1D025eK04_Q) | [Google Drive](https://drive.google.com/file/d/1B4eHfsTyw_Qj-XgZc2byYDT_95TLjtLj/view?usp=sharing) |
+| SIG | A New Backdoor Attack in Cnns by Training Set Corruption without Label Poisoning | [Baidu Drive](https://pan.baidu.com/s/1LXZuvb06als1D025eK04_Q) | [Google Drive](https://drive.google.com/file/d/1B4eHfsTyw_Qj-XgZc2byYDT_95TLjtLj/view?usp=sharing) |
+| Dynamic | Input-Aware Dynamic Backdoor Attack | [Baidu Drive](https://pan.baidu.com/s/1LXZuvb06als1D025eK04_Q) | [Google Drive](https://drive.google.com/file/d/1B4eHfsTyw_Qj-XgZc2byYDT_95TLjtLj/view?usp=sharing) |
+| WaNet | WaNet - Imperceptible Warping-based Backdoor Attack | [Baidu Drive](https://pan.baidu.com/s/1LXZuvb06als1D025eK04_Q) | [Google Drive](https://drive.google.com/file/d/1B4eHfsTyw_Qj-XgZc2byYDT_95TLjtLj/view?usp=sharing) |
+| FC | Poison Frog! Targeted Clean-label Backdoor Attacks on Neural Networks | [Baidu Drive](https://pan.baidu.com/s/1LXZuvb06als1D025eK04_Q) | [Google Drive](https://drive.google.com/file/d/1B4eHfsTyw_Qj-XgZc2byYDT_95TLjtLj/view?usp=sharing) |
+| DFST | Deep Feature Space Trojan Attack of Neural Networks by Controlled Detoxifcation | [Baidu Drive](https://pan.baidu.com/s/1LXZuvb06als1D025eK04_Q) | [Google Drive](https://drive.google.com/file/d/1B4eHfsTyw_Qj-XgZc2byYDT_95TLjtLj/view?usp=sharing) |
+| AWP | Can Adversarial Weight Perturbations Inject Neural Backdoors | [Baidu Drive](https://pan.baidu.com/s/1LXZuvb06als1D025eK04_Q) | [Google Drive](https://drive.google.com/file/d/1B4eHfsTyw_Qj-XgZc2byYDT_95TLjtLj/view?usp=sharing) |
+| LIRA | LIRA: Learnable, Imperceptible and Robust Backdoor Attacks | [Baidu Drive](https://pan.baidu.com/s/1LXZuvb06als1D025eK04_Q) | [Google Drive](https://drive.google.com/file/d/1B4eHfsTyw_Qj-XgZc2byYDT_95TLjtLj/view?usp=sharing) |
+| A-Blend | Circumventing Backdoor Defense that are Based on Latent Separability  | [Baidu Drive](https://pan.baidu.com/s/1LXZuvb06als1D025eK04_Q) | [Google Drive](https://drive.google.com/file/d/1B4eHfsTyw_Qj-XgZc2byYDT_95TLjtLj/view?usp=sharing) |
 
 
 ## Citation
