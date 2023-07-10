@@ -6,23 +6,9 @@ Code is under reorganizing...
 
 # Experimental Results on BadNets Attack  
 
-``
-
+```python
+[2023/07/09 22:21:00] - Namespace(alpha=0.2, arch='resnet18', backdoor_model_path='weights/ResNet18-ResNet-BadNets-target0-portion0.1-epoch80.tar', batch_size=128, clean_threshold=0.2, cuda=1, dataset='CIFAR10', log_root='logs/', mask_file=None, momentum=0.9, num_class=10, output_weight='weights/', pruning_by='threshold', pruning_max=0.9, pruning_step=0.05, ratio=0.01, recovering_epochs=20, recovering_lr=0.2, save_every=5, schedule=[10, 20], target_label=0, target_type='all2one', trig_h=3, trig_w=3, trigger_type='gridTrigger', unlearned_model_path=None, unlearning_epochs=20, unlearning_lr=0.01, weight_decay=0.0005)
 [2023/07/09 22:21:00] - ----------- Data Initialization --------------
-==> Preparing train data..
-Files already downloaded and verified
-full_train: 50000
-train_size: 500 drop_size: 49500
-==> Preparing test data..
-Files already downloaded and verified
-Generating testbad Imgs
-100%|██████████| 10000/10000 [00:00<00:00, 19826.74it/s]
-Injecting Over: 0Bad Imgs, 10000Clean Imgs
-  0%|          | 0/10000 [00:00<?, ?it/s]Generating testbad Imgs
- 91%|█████████▏| 9144/10000 [00:00<00:00, 14232.94it/s]Injecting Over: 9000Bad Imgs, 1000Clean Imgs
-100%|██████████| 10000/10000 [00:00<00:00, 14938.13it/s]
-
-
 [2023/07/09 22:21:03] - ----------- Backdoor Model Initialization --------------
 [2023/07/09 22:21:04] - Epoch 	 lr 	 Time 	 TrainLoss 	 TrainACC 	 PoisonLoss 	 PoisonACC 	 CleanLoss 	 CleanACC
 [2023/07/09 22:21:04] - ----------- Model Unlearning --------------
@@ -40,8 +26,6 @@ Injecting Over: 0Bad Imgs, 10000Clean Imgs
 [2023/07/09 22:23:15] - 11 	 0.001 	 10.8 	 4.0416 	 0.2360 	 0.0000 	 1.0000 	 2.8507 	 0.3729
 [2023/07/09 22:23:25] - 12 	 0.001 	 10.8 	 4.8811 	 0.1980 	 0.0000 	 1.0000 	 3.2337 	 0.3368
 [2023/07/09 22:23:25] - ----------- Model Recovering --------------
-Unlearned Model: 12 0.3367777777777778 1.0
-
 [2023/07/09 22:23:26] - Epoch 	 lr 	 Time 	 TrainLoss 	 TrainACC 	 PoisonLoss 	 PoisonACC 	 CleanLoss 	 CleanACC
 [2023/07/09 22:23:37] - 1 	 0.200 	 11.0 	 1.0719 	 0.1980 	 0.0000 	 1.0000 	 2.0311 	 0.4370
 [2023/07/09 22:23:48] - 2 	 0.200 	 11.0 	 0.9892 	 0.1920 	 0.0000 	 1.0000 	 1.3383 	 0.5432
@@ -63,8 +47,6 @@ Unlearned Model: 12 0.3367777777777778 1.0
 [2023/07/09 22:26:44] - 18 	 0.200 	 11.0 	 0.1476 	 0.6120 	 0.5614 	 0.7083 	 0.5766 	 0.8244
 [2023/07/09 22:26:55] - 19 	 0.200 	 11.0 	 0.1510 	 0.6380 	 0.5674 	 0.7069 	 0.5601 	 0.8312
 [2023/07/09 22:27:06] - 20 	 0.200 	 11.1 	 0.1439 	 0.6520 	 0.5788 	 0.6988 	 0.5417 	 0.8402
-
-
 [2023/07/09 22:27:07] - ----------- Backdoored Model Pruning --------------
 [2023/07/09 22:27:07] - No. 	 Layer Name 	 Neuron Idx 	 Mask 	 PoisonLoss 	 PoisonACC 	 CleanLoss 	 CleanACC
 [2023/07/09 22:27:17] - 0 	 None     	 None     	 0.0001 	 1.0000 	 0.2157 	 0.9340
@@ -75,16 +57,4 @@ Unlearned Model: 12 0.3367777777777778 1.0
 [2023/07/09 22:28:06] - 24.00 	 layer4.0.bn2 	 82 	 0.2 	 2.8242 	 0.0661 	 0.2297 	 0.9280
 [2023/07/09 22:28:16] - 28.00 	 layer3.0.bn1 	 106 	 0.25 	 3.2791 	 0.0424 	 0.2292 	 0.9270
 [2023/07/09 22:28:26] - 32.00 	 layer4.1.bn2 	 152 	 0.30000000000000004 	 4.2908 	 0.0172 	 0.2295 	 0.9277
-[2023/07/09 22:28:36] - 41.00 	 layer3.0.bn2 	 97 	 0.35000000000000003 	 5.5764 	 0.0112 	 0.2936 	 0.9094
-[2023/07/09 22:28:46] - 49.00 	 layer4.1.bn2 	 451 	 0.4 	 6.3171 	 0.0070 	 0.2963 	 0.9070
-[2023/07/09 22:28:56] - 57.00 	 layer4.1.bn2 	 352 	 0.45 	 6.6227 	 0.0059 	 0.2897 	 0.9077
-[2023/07/09 22:29:06] - 68.00 	 layer2.0.bn1 	 50 	 0.5 	 6.7961 	 0.0060 	 0.3132 	 0.9012
-[2023/07/09 22:29:16] - 82.00 	 layer4.1.bn2 	 86 	 0.55 	 7.0985 	 0.0034 	 0.3194 	 0.8976
-[2023/07/09 22:29:26] - 107.00 	 layer4.1.bn2 	 132 	 0.6000000000000001 	 7.2623 	 0.0026 	 0.3248 	 0.8941
-[2023/07/09 22:29:36] - 145.00 	 layer4.1.bn2 	 60 	 0.65 	 7.0780 	 0.0021 	 0.5540 	 0.8201
-[2023/07/09 22:29:46] - 204.00 	 layer4.1.bn2 	 271 	 0.7000000000000001 	 7.1320 	 0.0011 	 0.5561 	 0.8167
-[2023/07/09 22:29:56] - 263.00 	 bn1 	 61 	 0.75 	 6.9168 	 0.0006 	 0.6570 	 0.7844
-[2023/07/09 22:30:06] - 365.00 	 layer2.0.bn2 	 80 	 0.8 	 6.8394 	 0.0000 	 0.8824 	 0.7258
-[2023/07/09 22:30:17] - 524.00 	 layer2.0.bn2 	 33 	 0.8500000000000001 	 6.8990 	 0.0000 	 1.2204 	 0.6177
-[2023/07/09 22:30:28] - 753.00 	 layer3.0.bn2 	 113 	 0.9 	 5.9777 	 0.0000 	 2.0017 	 0.2519
-``
+```
