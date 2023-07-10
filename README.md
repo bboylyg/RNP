@@ -48,7 +48,7 @@ Code is under reorganizing...
 [2023/07/09 22:26:55] - 19 	 0.200 	 11.0 	 0.1510 	 0.6380 	 0.5674 	 0.7069 	 0.5601 	 0.8312
 [2023/07/09 22:27:06] - 20 	 0.200 	 11.1 	 0.1439 	 0.6520 	 0.5788 	 0.6988 	 0.5417 	 0.8402
 [2023/07/09 22:27:07] - ----------- Backdoored Model Pruning --------------
-[2023/07/09 22:27:07] - No. 	 Layer Name 	 Neuron Idx 	 Mask 	 PoisonLoss 	 PoisonACC 	 CleanLoss 	 CleanACC
+[2023/07/09 22:27:07] - Pruned Number 	 Layer Name 	 Neuron Idx 	 Mask 	 PoisonLoss 	 PoisonACC 	 CleanLoss 	 CleanACC
 [2023/07/09 22:27:17] - 0 	 None     	 None     	 0.0001 	 1.0000 	 0.2157 	 0.9340
 [2023/07/09 22:27:27] - 12.00 	 layer4.1.bn2 	 188 	 0.0 	 0.0122 	 0.9986 	 0.2104 	 0.9347
 [2023/07/09 22:27:37] - 14.00 	 layer4.1.bn2 	 12 	 0.05 	 0.0139 	 0.9982 	 0.2092 	 0.9340
