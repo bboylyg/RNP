@@ -101,7 +101,7 @@ year={2023},
 ```
 
 ## Acknowledgements
-As this code is reproduced based on the open-sourced code [ANP](https://github.com/csdongxian/ANP_backdoor) and [DCB](https://github.com/HanxunH/CognitiveDistillation), the authors would like to thank their contribution and help. 
+As this code is reproduced based on the open-sourced code [Adversarial Neuron Pruning Purifies Backdoored Deep Models](https://github.com/csdongxian/ANP_backdoor) and [Distilling Cognitive Backdoor Patterns within an Image](https://github.com/HanxunH/CognitiveDistillation), the authors would like to thank their contribution and help. 
 
 
 
