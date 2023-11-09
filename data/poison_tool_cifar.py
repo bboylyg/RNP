@@ -96,7 +96,13 @@ def get_test_loader(args):
 
 def get_backdoor_loader(args):
     print('==> Preparing train data..')
-    tf_train = transforms.Compose([transforms.ToTensor()
+    tf_train = transforms.Compose([
+        transforms.ToPILImage(),
+        transforms.RandomCrop(32, padding=4),
+        # transforms.RandomRotation(3),
+        transforms.RandomHorizontalFlip(),
+        transforms.ToTensor(),
+        transforms.Normalize(MEAN_CIFAR10, STD_CIFAR10)
                                   ])
     if (args.dataset == 'CIFAR10'):
         trainset = datasets.CIFAR10(root='data/CIFAR10', train=True, download=True)
