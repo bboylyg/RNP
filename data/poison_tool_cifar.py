@@ -19,6 +19,10 @@ if torch.cuda.is_available():
 else:
     device = torch.device('cpu')
 
+
+MEAN_CIFAR10 = (0.4914, 0.4822, 0.4465)
+STD_CIFAR10 = (0.2023, 0.1994, 0.2010)
+
 def split_dataset(dataset, frac=0.1, perm=None):
     """
     :param dataset: The whole dataset which will be split.
@@ -45,8 +49,6 @@ def split_dataset(dataset, frac=0.1, perm=None):
 
 def get_train_loader(args):
     print('==> Preparing train data..')
-    MEAN_CIFAR10 = (0.4914, 0.4822, 0.4465)
-    STD_CIFAR10 = (0.2023, 0.1994, 0.2010)
     tf_train = transforms.Compose([
         transforms.RandomCrop(32, padding=4),
         # transforms.RandomRotation(3),
@@ -67,8 +69,6 @@ def get_train_loader(args):
 
 def get_test_loader(args):
     print('==> Preparing test data..')
-    MEAN_CIFAR10 = (0.4914, 0.4822, 0.4465)
-    STD_CIFAR10 = (0.2023, 0.1994, 0.2010)
     tf_test = transforms.Compose([transforms.ToTensor(),
                                   transforms.Normalize(MEAN_CIFAR10, STD_CIFAR10)
                                   ])

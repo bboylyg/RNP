@@ -8,7 +8,7 @@ import torch.nn as nn
 import pandas as pd
 from collections import OrderedDict
 import models
-from datasets.poison_tool_cifar import get_backdoor_loader, get_test_loader, get_train_loader
+from data.poison_tool_cifar import get_backdoor_loader, get_test_loader, get_train_loader
 
 if torch.cuda.is_available():
     torch.backends.cudnn.enabled = True
@@ -80,7 +80,7 @@ def main(args):
     logger.info(args)
 
     logger.info('----------- Backdoored Data Initialization --------------')
-    backdoor_data_loader = get_backdoor_loader(args)
+    _, backdoor_data_loader = get_backdoor_loader(args)
     clean_test_loader, bad_test_loader = get_test_loader(args)
 
     logger.info('----------- Backdoor Model Initialization --------------')
