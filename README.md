@@ -68,6 +68,13 @@ python main.py
 [2023/07/09 22:28:26] - 32.00 	 layer4.1.bn2 	 152 	 0.30000000000000004 	 4.2908 	 0.0172 	 0.2295 	 0.9277
 ```
 
+
+## Links to ImageNet-12 Subset  
+Please download the ImageNet-12 subset with this link: (Baidu driver)[https://pan.baidu.com/share/init?surl=LjE6g1cxQ98RZHMWi0tQlA] (pwd: qetk) or (Google driver)[https://drive.google.com/file/d/1yG9ENDUbOIUKY1i5ADu4X_7Lhbvqca2w/view?usp=sharing]  
+
+
+
+
 ## Backdoor Model Weights
 You can directly download the pre-trained backdoored model weights with the links below:  
 
